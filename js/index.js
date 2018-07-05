@@ -16,12 +16,12 @@ $( () => {
 		}
 		if($('nav').hasClass('navShadow')) 
 		{
-			$('#word-mark').css({'width':'0px','opacity':'0'});
+			$('#word-mark').css({'width':'0px','height':'0px','opacity':'0'});
 		} else
 		{
 			if($(window).width()>491)
 			{
-				$('#word-mark').css({'width':'120px','opacity':'1'});
+				$('#word-mark').css({'width':'120px','height':'auto','opacity':'1'});
 			}
 		}
 	});
@@ -30,15 +30,15 @@ $( () => {
 		var width = $(window).width();
 		if(width <=491){ 
 			/*$('nav').addClass('navShadow');*/
-			$('#word-mark').css({'width':'0px','opacity':'0'});
+			$('#word-mark').css({'width':'0px','height':'0px','opacity':'0'});
 		} else {
 			/*$('nav').removeClass('navShadow');*/
 			if(!$('nav').hasClass('navShadow')) 
 			{
-				$('#word-mark').css({'width':'120px','opacity':'1'});
+				$('#word-mark').css({'width':'120px','height':'auto', 'opacity':'1'});
 			} else
 			{
-				$('#word-mark').css({'width':'0px','opacity':'0'});
+				$('#word-mark').css({'width':'0px','height':'0px', 'opacity':'0'});
 			}
 		}
 	});
