@@ -46,6 +46,14 @@ $( () => {
 		}
 	});
 	
+	$( document ).ready(function() {
+  		var width = $(window).width();
+		if(width <=491){ 
+			//$('#word-mark').css({'width':'0px','height':'0px','opacity':'0'});
+			$('#word-mark').css('display','none');
+		}
+	});
+	
 	//Click Logo To Scroll To Top
 	$('#logo').on('click', () => {
 		$('html,body').animate({
