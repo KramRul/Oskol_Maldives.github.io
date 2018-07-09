@@ -180,7 +180,7 @@ li a {
   border-radius: 90px;
   position: relative;
 }
-/*#head-line:before, #head-line:after {
+#head-line:before, #head-line:after {
   content: '';
   height: 30px;
   border-radius: 90px;
@@ -202,7 +202,7 @@ li a {
   bottom: -60px;
   -webkit-transform: translate(-50%, 0);
           transform: translate(-50%, 0);
-}*/
+}
 
 /*** Section Styles ***/
 section {
