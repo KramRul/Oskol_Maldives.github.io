@@ -26,7 +26,9 @@ header {
 nav {
   width: 100vw;
   height: 160px;
-  background: #46B2F0;
+  background-image: url( ../img/wood-background-35.png);
+  background-position: center;
+  background-size: 100% 150%;
   display: grid;
   grid-template-columns: 1fr 1fr;
   position: fixed;
@@ -44,14 +46,24 @@ nav.navShadow #word-mark {
 }
 
 #brand,
-#menu,
-ul {
+#menu{
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.menu ul
+{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style:none;
 }
 
 #brand {
@@ -91,10 +103,10 @@ ul {
   padding-left: 30px;
 }
 
-li {
+.menu li {
   margin-left: 10px;
 }
-li a {
+.menu li a {
   width: 150px;
   background: #fff;
   display: block;
@@ -207,27 +219,90 @@ li a {
 /*** Section Styles ***/
 section {
   width: 100vw;
-  height: calc(100vh - 100px);
-  display: -webkit-box;
+  height: 100%;
+  /*display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
-          justify-content: center;
+          justify-content: center;*/
+  display: block;
+  padding: 10px;
+  background: url(../img/404505-free-download-wood-backgrounds-1920x1080.jpg);
+  background-attachment: fixed;
 }
-section:nth-child(odd) {
-  background: #FA6C98;
+/*section:nth-child(odd) {
+  background: #B4B4B4;
 }
 section:nth-child(even) {
-  background: #79EDFC;
-}
+  background:  #DADADA;
+}*/
 
 #heading {
   width: 120px;
   height: 20px;
   background: #fff;
   border-radius: 90px;
-  margin-top: 40px;
+  /*margin-top: 40px;*/
+}
+
+/*** Article style ***/
+article
+{
+	width: 80%;
+    margin: 0 auto;
+	padding: 0 10px;
+	font-size: 18px;
+	text-indent: 5%;
+	text-align: justify;
+	background: rgba(255,245,215,.6);
+}
+
+article ul
+{
+	margin-top: 10px;
+	margin-left: 12px;
+	list-style: none;
+    padding: 0;
+    border: 0;
+    font: inherit;
+	text-indent: 0%;
+	text-align: justify;
+}
+
+article ul li
+{
+	list-style-image: url(../img/list2.png);
+    list-style-position: outside;
+	margin: 0 0 12px 0;
+    line-height: 130%;
+}
+
+article ul li strong
+{
+	font-weight: normal;
+    color: #2F2D2D;
+}
+
+.title_style
+{
+	border-bottom: #e8e8e8 1px solid;
+    position: relative;
+    padding: 0 0 10px 0;
+    margin: 10px 0 20px 0;
+	font-size: 20px;
+	text-indent: 0;
+}
+
+.title-block
+{
+	background: #603913;
+	width: 48px;
+    height: 3px;
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: -3px;
 }
 
 /*** Responsive Menu For Smaller Device ***/
@@ -238,7 +313,7 @@ section:nth-child(even) {
     display: flex;
   }
 
-  ul {
+  .menu ul {
     display: inline-block;
     width: 100vw;
     height: 0;
@@ -251,6 +326,7 @@ section:nth-child(even) {
             box-shadow: 0 5px 30px -4px rgba(0, 0, 0, 0.2);
     -webkit-transition: all 0.3s;
     transition: all 0.3s;
+	list-style:none;
   }
   ul.showMenu {
     height: 180px;
@@ -262,7 +338,7 @@ section:nth-child(even) {
     visibility: visible;
   }
 
-  li {
+  .menu li {
     width: 50%;
     height: 80px;
     float: left;
@@ -273,7 +349,7 @@ section:nth-child(even) {
     -webkit-transition: all 0.3s 0.1s;
     transition: all 0.3s 0.1s;
   }
-  li:first-child, li:nth-child(2) {
+  .menu li:first-child, .menu li:nth-child(2) {
     margin-top: 15px;
   }	
 	
