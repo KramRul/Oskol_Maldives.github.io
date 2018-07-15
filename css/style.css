@@ -258,6 +258,11 @@ article
 	background: rgba(255,245,215,.6);
 }
 
+article p.placement
+{
+	text-indent: 0%;
+}
+
 article ul
 {
 	margin-top: 10px;
@@ -284,6 +289,11 @@ article ul li strong
     color: #2F2D2D;
 }
 
+article ul li a
+{
+	color: #603913;
+}
+
 .title_style
 {
 	border-bottom: #e8e8e8 1px solid;
@@ -303,6 +313,13 @@ article ul li strong
     position: absolute;
     left: 0;
     bottom: -3px;
+}
+
+h2.title_style
+{
+	font-size: 28px;
+	padding: 10px 0 10px 0;
+	text-align: center;
 }
 
 /*** Responsive Menu For Smaller Device ***/
