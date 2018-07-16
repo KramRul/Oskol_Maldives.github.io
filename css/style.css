@@ -246,6 +246,30 @@ section:nth-child(even) {
   /*margin-top: 40px;*/
 }
 
+table
+{
+	width: 100%;
+	max-width: 100%;
+	border-spacing: 0;
+	border-style: solid;
+	border-width: 1px;
+	border-color: black;
+	text-align: center;
+	text-indent: 0%;
+	margin: 10px 0;
+}
+
+table th
+{
+	background: #8D531B;
+	border: 1px solid #000;
+}
+
+table td
+{
+	border: 1px solid #000;
+}
+
 /*** Article style ***/
 article
 {
