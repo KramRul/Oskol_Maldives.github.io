@@ -183,14 +183,22 @@ nav.navShadow #word-mark {
       -ms-flex-align: center;
           align-items: center;
   margin-top: 160px;
+	background-image: url( ../img/P80719-110346.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 #head-line {
-  width: 520px;
-  height: 30px;
-  background: #fff;
+  width: 720px;
+  height: auto;
+  background: rgba(0, 0, 0, 0.4);
   border-radius: 90px;
   position: relative;
+	text-align: center;
+	font-size: 28px;
+	color:white;
+	padding: 30px;
 }
 /*#head-line:before, #head-line:after {
   content: '';
@@ -270,6 +278,44 @@ table td
 	border: 1px solid #000;
 }
 
+p.tellephone
+{
+	display: block;
+	display: -webkit-box;
+    display: -ms-flexbox;
+	display: flex;
+	padding-top: 10px;
+}
+
+#tellephone
+{
+	color: #1c1c1c;
+  text-decoration: none;
+	display: -webkit-box;
+    display: -ms-flexbox;
+	display: flex;
+	margin-left: 30px;
+}
+
+#tellephone:before
+{
+	background-image: url(../img/list_phone.png);
+  background-repeat: no-repeat;
+  background-position: center;
+	background-color: #1c1c1c;
+	border-radius: 99%;
+	display: -webkit-box;
+    display: -ms-flexbox;
+	display: flex;
+	width: 36px;
+  height: 36px;
+	z-index: 20;
+	content: "";
+	position: inherit;
+  left: 0;
+	top: 0px;
+}
+
 /*** Article style ***/
 article
 {
@@ -346,6 +392,12 @@ h2.title_style
 	text-align: center;
 }
 
+.pledge
+{
+	border: #e8e8e8 4px solid;
+	border-radius: 10px;
+}
+
 /*** Responsive Menu For Smaller Device ***/
 @media screen and (max-width: 1390px) {
   #menu-toggle {
@@ -358,7 +410,8 @@ h2.title_style
     display: inline-block;
     width: 100vw;
     height: 0;
-    background: #79EDFC;
+    /*background: #79EDFC;*/
+		background: url(../img/404505-free-download-wood-backgrounds-1920x1080.jpg);
     position: absolute;
     top: 160px;
     -webkit-transform: translate(, );
