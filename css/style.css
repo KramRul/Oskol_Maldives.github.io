@@ -22,6 +22,22 @@ header {
   display: flex;
 }
 
+#footer
+{
+    position: inherit; /* Фиксированное положение */
+    padding: 10px; /* Поля вокруг текста */
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff; /* Цвет текста */
+    width: 100vw; /* Ширина слоя */
+	  text-align: center;
+}
+
+footer
+{
+		background: url(../img/404505-free-download-wood-backgrounds-1920x1080.jpg);
+    background-attachment: fixed;
+}
+
 /*** Navigation Styles ***/
 nav {
   width: 100vw;
@@ -451,4 +467,9 @@ h2.title_style
     -webkit-transform: scale(0.8);
             transform: scale(0.8);
   }
+	
+	article
+	{
+		width: 100vw;
+	}
 }
